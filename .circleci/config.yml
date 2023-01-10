@@ -26,6 +26,7 @@ jobs:
     steps:
       - checkout
       - run: npm ci
+      - run: npm install
       - run: npm audit fix
       - run: npm audit
 
