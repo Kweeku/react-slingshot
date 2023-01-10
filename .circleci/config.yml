@@ -24,9 +24,9 @@ jobs:
       - image: node:13.8
 
     steps:
+      - run: npm install
       - checkout
       - run: npm ci
-      - run: npm install
       - run: npm audit fix
       - run: npm audit
 
